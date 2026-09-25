@@ -1,0 +1,427 @@
+{
+  "cases": [
+    {
+      "category": "startup",
+      "description": "Fresh workspace migration and API construction.",
+      "error": null,
+      "fixture": "fresh temporary workspace",
+      "id": "startup-cold",
+      "implementation": "current SQLite/FastAPI startup",
+      "measured_iterations": 3,
+      "median_ms": 217.864833,
+      "metadata": {},
+      "min_ms": 216.168458,
+      "p95_ms": 233.04183360000002,
+      "peak_python_bytes": 4504328,
+      "process_peak_rss_bytes": 139100160,
+      "samples": [
+        {
+          "duration_ms": 234.728167,
+          "output_bytes": 561152,
+          "peak_python_bytes": 4504328
+        },
+        {
+          "duration_ms": 216.168458,
+          "output_bytes": 561152,
+          "peak_python_bytes": 4460687
+        },
+        {
+          "duration_ms": 217.864833,
+          "output_bytes": 561152,
+          "peak_python_bytes": 4460557
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 0
+    },
+    {
+      "category": "contract",
+      "description": "Fresh API construction and complete OpenAPI contract generation.",
+      "error": null,
+      "fixture": "fresh temporary workspace",
+      "id": "openapi-cold",
+      "implementation": "current FastAPI/Pydantic OpenAPI generation",
+      "measured_iterations": 3,
+      "median_ms": 1356.913875,
+      "metadata": {
+        "contract_surface": "all registered API routes and schemas"
+      },
+      "min_ms": 1306.518875,
+      "p95_ms": 1373.7979506,
+      "peak_python_bytes": 17456721,
+      "process_peak_rss_bytes": 163610624,
+      "samples": [
+        {
+          "duration_ms": 1356.913875,
+          "output_bytes": 276489,
+          "peak_python_bytes": 17456721
+        },
+        {
+          "duration_ms": 1306.518875,
+          "output_bytes": 276489,
+          "peak_python_bytes": 17365106
+        },
+        {
+          "duration_ms": 1375.673959,
+          "output_bytes": 276489,
+          "peak_python_bytes": 17365249
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 0
+    },
+    {
+      "category": "reopen",
+      "description": "Open a migrated database, list 25 projects, and retrieve one project.",
+      "error": null,
+      "fixture": "25-project temporary workspace",
+      "id": "project-reopen-warm",
+      "implementation": "current SQLite repositories",
+      "measured_iterations": 7,
+      "median_ms": 1.508458,
+      "metadata": {},
+      "min_ms": 1.447542,
+      "p95_ms": 1.5946002,
+      "peak_python_bytes": 26241,
+      "process_peak_rss_bytes": 163790848,
+      "samples": [
+        {
+          "duration_ms": 1.525709,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 1.485667,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 1.520833,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 1.624125,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 1.508458,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 1.447542,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 1.495042,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "preview",
+      "description": "Classify the full-resolution procedural image to four labels.",
+      "error": null,
+      "fixture": "public-regression/geometry-stress.png (2520x1680)",
+      "id": "preview-cold-stress",
+      "implementation": "production chunked CIELAB classifier",
+      "measured_iterations": 3,
+      "median_ms": 441.01725,
+      "metadata": {
+        "distance": "CIE76",
+        "dither": "none",
+        "palette": [
+          "#F2D6AA",
+          "#E75B12",
+          "#0A3A78",
+          "#202428"
+        ]
+      },
+      "min_ms": 426.822791,
+      "p95_ms": 449.6984628,
+      "peak_python_bytes": 34240746,
+      "process_peak_rss_bytes": 247398400,
+      "samples": [
+        {
+          "duration_ms": 450.663042,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34240746
+        },
+        {
+          "duration_ms": 426.822791,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34220555
+        },
+        {
+          "duration_ms": 441.01725,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34220555
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 0
+    },
+    {
+      "category": "preview",
+      "description": "Recompute four labels from the decoded procedural image.",
+      "error": null,
+      "fixture": "preloaded geometry-stress.png (2520x1680 RGBA)",
+      "id": "preview-warm-stress",
+      "implementation": "production chunked CIELAB classifier",
+      "measured_iterations": 7,
+      "median_ms": 409.468209,
+      "metadata": {
+        "distance": "CIE76",
+        "dither": "none",
+        "palette": [
+          "#F2D6AA",
+          "#E75B12",
+          "#0A3A78",
+          "#202428"
+        ]
+      },
+      "min_ms": 401.79775,
+      "p95_ms": 413.8877536,
+      "peak_python_bytes": 34219456,
+      "process_peak_rss_bytes": 253231104,
+      "samples": [
+        {
+          "duration_ms": 405.821334,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 401.79775,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 409.468209,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 412.978833,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219456
+        },
+        {
+          "duration_ms": 410.102375,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 414.277291,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 403.323625,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "palette",
+      "description": "Fit and classify a deterministic four-color procedural palette.",
+      "error": null,
+      "fixture": "preloaded geometry-stress.png (2520x1680 RGBA)",
+      "id": "auto-palette-stress",
+      "implementation": "production sampled CIELAB k-means and chunked classifier",
+      "measured_iterations": 5,
+      "median_ms": 452.817833,
+      "metadata": {
+        "color_count": 4,
+        "distance": "CIE76",
+        "sampling": "seeded-systematic"
+      },
+      "min_ms": 449.549875,
+      "p95_ms": 464.739275,
+      "peak_python_bytes": 34222986,
+      "process_peak_rss_bytes": 261636096,
+      "samples": [
+        {
+          "duration_ms": 451.722708,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34222069
+        },
+        {
+          "duration_ms": 461.325875,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34222251
+        },
+        {
+          "duration_ms": 452.817833,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34222654
+        },
+        {
+          "duration_ms": 449.549875,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34222986
+        },
+        {
+          "duration_ms": 465.592625,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34222069
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "vectorization",
+      "description": "Trace the nozzle-scale synthetic binary mask to SVG.",
+      "error": null,
+      "fixture": "synthetic/geometry-nozzle-040.png",
+      "id": "vectorization-potrace",
+      "implementation": "installed Potrace adapter",
+      "measured_iterations": 5,
+      "median_ms": 29.340458,
+      "metadata": {
+        "openscad_version": "2026.06.12",
+        "potrace_version": "1.16"
+      },
+      "min_ms": 28.149917,
+      "p95_ms": 29.6503836,
+      "peak_python_bytes": 79591,
+      "process_peak_rss_bytes": 261668864,
+      "samples": [
+        {
+          "duration_ms": 29.721417,
+          "output_bytes": 5848,
+          "peak_python_bytes": 79591
+        },
+        {
+          "duration_ms": 29.340458,
+          "output_bytes": 5848,
+          "peak_python_bytes": 79591
+        },
+        {
+          "duration_ms": 29.160875,
+          "output_bytes": 5848,
+          "peak_python_bytes": 79591
+        },
+        {
+          "duration_ms": 29.36625,
+          "output_bytes": 5848,
+          "peak_python_bytes": 79591
+        },
+        {
+          "duration_ms": 28.149917,
+          "output_bytes": 5848,
+          "peak_python_bytes": 79591
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "geometry",
+      "description": "Extrude a 120x80 mm base and traced relief to binary STL.",
+      "error": null,
+      "fixture": "Potrace SVG from geometry-nozzle-040.png",
+      "id": "geometry-openscad",
+      "implementation": "installed OpenSCAD reference adapter",
+      "measured_iterations": 3,
+      "median_ms": 154.789709,
+      "metadata": {
+        "openscad_version": "2026.06.12",
+        "potrace_version": "1.16"
+      },
+      "min_ms": 148.912125,
+      "p95_ms": 173.0612462,
+      "peak_python_bytes": 79700,
+      "process_peak_rss_bytes": 261685248,
+      "samples": [
+        {
+          "duration_ms": 175.091417,
+          "output_bytes": 9595792,
+          "peak_python_bytes": 79585
+        },
+        {
+          "duration_ms": 154.789709,
+          "output_bytes": 9595792,
+          "peak_python_bytes": 79700
+        },
+        {
+          "duration_ms": 148.912125,
+          "output_bytes": 9595792,
+          "peak_python_bytes": 79585
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "packaging",
+      "description": "Build and independently parse a representative production Bambu 3MF.",
+      "error": null,
+      "fixture": "30 homogeneous parts, 4 materials, 4,800 vertices, 7,200 triangles",
+      "id": "packaging-production-3mf",
+      "implementation": "production deterministic Bambu 3MF writer and reader",
+      "measured_iterations": 5,
+      "median_ms": 435.81625,
+      "metadata": {
+        "mesh_count": 30,
+        "openscad_version": "2026.06.12",
+        "potrace_version": "1.16",
+        "triangle_count": 7200,
+        "vertex_count": 4800
+      },
+      "min_ms": 415.326875,
+      "p95_ms": 451.6794914,
+      "peak_python_bytes": 12434287,
+      "process_peak_rss_bytes": 267337728,
+      "samples": [
+        {
+          "duration_ms": 415.326875,
+          "output_bytes": 48266,
+          "peak_python_bytes": 12434287
+        },
+        {
+          "duration_ms": 435.81625,
+          "output_bytes": 48266,
+          "peak_python_bytes": 12434287
+        },
+        {
+          "duration_ms": 452.971583,
+          "output_bytes": 48266,
+          "peak_python_bytes": 12434287
+        },
+        {
+          "duration_ms": 416.908417,
+          "output_bytes": 48266,
+          "peak_python_bytes": 12434287
+        },
+        {
+          "duration_ms": 446.511125,
+          "output_bytes": 48266,
+          "peak_python_bytes": 12434287
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    }
+  ],
+  "generated_at": "2026-09-24T00:32:44.587975Z",
+  "git_commit": "e84136fdd1c3bb552030b0af2d29703fb89be1ab",
+  "machine": {
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.9.6",
+    "release": "25.3.0",
+    "system": "Darwin"
+  },
+  "run_id": "baseline-2026-09-24-public-fixtures",
+  "schema_version": 1
+}

@@ -1,0 +1,425 @@
+{
+  "cases": [
+    {
+      "category": "startup",
+      "description": "Fresh workspace migration and API construction.",
+      "error": null,
+      "fixture": "fresh temporary workspace",
+      "id": "startup-cold",
+      "implementation": "current SQLite/FastAPI startup",
+      "measured_iterations": 3,
+      "median_ms": 76.268917,
+      "metadata": {},
+      "min_ms": 71.716917,
+      "p95_ms": 77.54489199999999,
+      "peak_python_bytes": 1557702,
+      "process_peak_rss_bytes": 116555776,
+      "samples": [
+        {
+          "duration_ms": 76.268917,
+          "output_bytes": 311296,
+          "peak_python_bytes": 1557702
+        },
+        {
+          "duration_ms": 71.716917,
+          "output_bytes": 311296,
+          "peak_python_bytes": 1522432
+        },
+        {
+          "duration_ms": 77.686667,
+          "output_bytes": 311296,
+          "peak_python_bytes": 1525987
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 0
+    },
+    {
+      "category": "contract",
+      "description": "Fresh API construction and complete OpenAPI contract generation.",
+      "error": null,
+      "fixture": "fresh temporary workspace",
+      "id": "openapi-cold",
+      "implementation": "current FastAPI/Pydantic OpenAPI generation",
+      "measured_iterations": 3,
+      "median_ms": 684.051208,
+      "metadata": {
+        "contract_surface": "all registered API routes and schemas"
+      },
+      "min_ms": 647.401833,
+      "p95_ms": 685.5303958000001,
+      "peak_python_bytes": 9403153,
+      "process_peak_rss_bytes": 130744320,
+      "samples": [
+        {
+          "duration_ms": 685.69475,
+          "output_bytes": 157003,
+          "peak_python_bytes": 9403153
+        },
+        {
+          "duration_ms": 684.051208,
+          "output_bytes": 157003,
+          "peak_python_bytes": 9322351
+        },
+        {
+          "duration_ms": 647.401833,
+          "output_bytes": 157003,
+          "peak_python_bytes": 9318767
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 0
+    },
+    {
+      "category": "reopen",
+      "description": "Open a migrated database, list 25 projects, and retrieve one project.",
+      "error": null,
+      "fixture": "25-project temporary workspace",
+      "id": "project-reopen-warm",
+      "implementation": "current SQLite repositories",
+      "measured_iterations": 7,
+      "median_ms": 0.971209,
+      "metadata": {},
+      "min_ms": 0.942875,
+      "p95_ms": 1.053483,
+      "peak_python_bytes": 26241,
+      "process_peak_rss_bytes": 130826240,
+      "samples": [
+        {
+          "duration_ms": 1.055583,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 0.986541,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 0.971209,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 0.942875,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 1.048583,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 0.966584,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 0.945542,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "preview",
+      "description": "Decode and classify the native production Wager image to four labels.",
+      "error": null,
+      "fixture": "real-private/wager-production.png (2520x1680)",
+      "id": "preview-cold-wager",
+      "implementation": "production chunked CIELAB classifier",
+      "measured_iterations": 3,
+      "median_ms": 422.843167,
+      "metadata": {
+        "distance": "CIE76",
+        "dither": "none",
+        "palette": [
+          "#F2D6AA",
+          "#E75B12",
+          "#0A3A78",
+          "#202428"
+        ]
+      },
+      "min_ms": 421.444792,
+      "p95_ms": 427.6550539,
+      "peak_python_bytes": 34240746,
+      "process_peak_rss_bytes": 215433216,
+      "samples": [
+        {
+          "duration_ms": 428.189708,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34240746
+        },
+        {
+          "duration_ms": 422.843167,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34220555
+        },
+        {
+          "duration_ms": 421.444792,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34220555
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 0
+    },
+    {
+      "category": "preview",
+      "description": "Recompute four labels from a decoded native production Wager image.",
+      "error": null,
+      "fixture": "preloaded wager-production.png (2520x1680 RGBA)",
+      "id": "preview-warm-wager",
+      "implementation": "production chunked CIELAB classifier",
+      "measured_iterations": 7,
+      "median_ms": 388.839334,
+      "metadata": {
+        "distance": "CIE76",
+        "dither": "none",
+        "palette": [
+          "#F2D6AA",
+          "#E75B12",
+          "#0A3A78",
+          "#202428"
+        ]
+      },
+      "min_ms": 375.234625,
+      "p95_ms": 398.20886229999996,
+      "peak_python_bytes": 34219456,
+      "process_peak_rss_bytes": 215449600,
+      "samples": [
+        {
+          "duration_ms": 399.1015,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 388.959458,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 388.839334,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 396.126041,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219456
+        },
+        {
+          "duration_ms": 381.607625,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 375.234625,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 377.276833,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "palette",
+      "description": "Fit and classify a deterministic four-color palette for Wager.",
+      "error": null,
+      "fixture": "preloaded wager-production.png (2520x1680 RGBA)",
+      "id": "auto-palette-wager",
+      "implementation": "production sampled CIELAB k-means and chunked classifier",
+      "measured_iterations": 5,
+      "median_ms": 447.464666,
+      "metadata": {
+        "color_count": 4,
+        "distance": "CIE76",
+        "sampling": "seeded-systematic"
+      },
+      "min_ms": 432.192833,
+      "p95_ms": 450.88356699999997,
+      "peak_python_bytes": 34223818,
+      "process_peak_rss_bytes": 215547904,
+      "samples": [
+        {
+          "duration_ms": 432.192833,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34223083
+        },
+        {
+          "duration_ms": 432.908542,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34222901
+        },
+        {
+          "duration_ms": 447.464666,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34223486
+        },
+        {
+          "duration_ms": 451.150542,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34223818
+        },
+        {
+          "duration_ms": 449.815667,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34222901
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "vectorization",
+      "description": "Trace the nozzle-scale synthetic binary mask to SVG.",
+      "error": null,
+      "fixture": "synthetic/geometry-nozzle-040.png",
+      "id": "vectorization-potrace",
+      "implementation": "installed Potrace adapter",
+      "measured_iterations": 5,
+      "median_ms": 33.073,
+      "metadata": {
+        "openscad_version": "2026.06.12",
+        "potrace_version": "1.16"
+      },
+      "min_ms": 28.572166,
+      "p95_ms": 33.2897916,
+      "peak_python_bytes": 78779,
+      "process_peak_rss_bytes": 215547904,
+      "samples": [
+        {
+          "duration_ms": 33.191958,
+          "output_bytes": 5848,
+          "peak_python_bytes": 78779
+        },
+        {
+          "duration_ms": 28.572166,
+          "output_bytes": 5848,
+          "peak_python_bytes": 78779
+        },
+        {
+          "duration_ms": 33.073,
+          "output_bytes": 5848,
+          "peak_python_bytes": 78779
+        },
+        {
+          "duration_ms": 32.991958,
+          "output_bytes": 5848,
+          "peak_python_bytes": 78779
+        },
+        {
+          "duration_ms": 33.31425,
+          "output_bytes": 5848,
+          "peak_python_bytes": 78779
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "geometry",
+      "description": "Extrude a 120x80 mm base and traced relief to binary STL.",
+      "error": null,
+      "fixture": "Potrace SVG from geometry-nozzle-040.png",
+      "id": "geometry-openscad",
+      "implementation": "installed OpenSCAD reference adapter",
+      "measured_iterations": 3,
+      "median_ms": 140.775917,
+      "metadata": {
+        "openscad_version": "2026.06.12",
+        "potrace_version": "1.16"
+      },
+      "min_ms": 137.132042,
+      "p95_ms": 146.2629911,
+      "peak_python_bytes": 78888,
+      "process_peak_rss_bytes": 215547904,
+      "samples": [
+        {
+          "duration_ms": 140.775917,
+          "output_bytes": 9595792,
+          "peak_python_bytes": 78773
+        },
+        {
+          "duration_ms": 146.872666,
+          "output_bytes": 9595792,
+          "peak_python_bytes": 78888
+        },
+        {
+          "duration_ms": 137.132042,
+          "output_bytes": 9595792,
+          "peak_python_bytes": 78773
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "packaging",
+      "description": "Create a deterministic compressed package from representative artifacts.",
+      "error": null,
+      "fixture": "Wager PNG, labels, SVG, STL, and manifest",
+      "id": "packaging-reference",
+      "implementation": "reference ZIP packaging (pre-3MF writer)",
+      "measured_iterations": 5,
+      "median_ms": 630.525291,
+      "metadata": {
+        "openscad_version": "2026.06.12",
+        "potrace_version": "1.16",
+        "replacement_gate": "Replace with production 3MF packaging benchmark in M2."
+      },
+      "min_ms": 621.43375,
+      "p95_ms": 646.1346169999999,
+      "peak_python_bytes": 34219132,
+      "process_peak_rss_bytes": 256376832,
+      "samples": [
+        {
+          "duration_ms": 636.807917,
+          "output_bytes": 7697314,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 621.43375,
+          "output_bytes": 7697314,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 624.051833,
+          "output_bytes": 7697314,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 630.525291,
+          "output_bytes": 7697314,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 648.466292,
+          "output_bytes": 7697314,
+          "peak_python_bytes": 34219132
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    }
+  ],
+  "generated_at": "2026-07-16T17:37:39.157495Z",
+  "git_commit": "6c107ee",
+  "machine": {
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.9.6",
+    "release": "25.3.0",
+    "system": "Darwin"
+  },
+  "run_id": "baseline-2026-07-17-split-startup",
+  "schema_version": 1
+}

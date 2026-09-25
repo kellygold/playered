@@ -1,0 +1,15 @@
+{
+  "cases": [
+    {
+      "case_id": "mural-topology-partition-1024-3x2",
+      "max_median_ms": 15000.0,
+      "max_p95_ms": 18000.0,
+      "max_peak_python_bytes": 1024,
+      "max_process_peak_rss_bytes": 314572800
+    }
+  ],
+  "derivation": "Reviewed M4 production budget: 1024\u00d71024 3\u00d72 partition median \u226415 s, p95 \u226418 s, and whole-process peak RSS \u2264300 MiB on the recorded reference machine. Python allocation tracing is disabled because it distorts this object-heavy production path.",
+  "schema_version": 1,
+  "source_run_id": "baseline-2026-07-17-mural-partition",
+  "source_run_sha256": "7c855647b0b2fbcf26bcb60794219fa89b39140b49f17870c9296160134b17b3"
+}

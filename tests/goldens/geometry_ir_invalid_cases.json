@@ -1,0 +1,38 @@
+[
+  {
+    "name": "missing schema version",
+    "path": "schema_version",
+    "value": "__delete__",
+    "match": "Field required"
+  },
+  {
+    "name": "unknown schema version",
+    "path": "schema_version",
+    "value": 99,
+    "match": "Input should be 1"
+  },
+  {
+    "name": "wrong fill rule",
+    "path": "contract.fill_rule",
+    "value": "even_odd",
+    "match": "Input should be 'non_zero'"
+  },
+  {
+    "name": "noncanonical collection order",
+    "path": "materials.0.id",
+    "value": "material_ffffffffffffffffffffffff",
+    "match": "canonical ID ordering|content ID mismatch"
+  },
+  {
+    "name": "missing part mesh",
+    "path": "parts.0.mesh_id",
+    "value": "mesh_000000000000000000000000",
+    "match": "content ID mismatch"
+  },
+  {
+    "name": "invalid coordinate precision",
+    "path": "base.center.x_mm",
+    "value": 0.0000004,
+    "match": "0.000001 mm precision"
+  }
+]

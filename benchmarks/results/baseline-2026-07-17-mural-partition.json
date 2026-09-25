@@ -1,0 +1,61 @@
+{
+  "cases": [
+    {
+      "category": "mural-topology",
+      "description": "Partition one authoritative 1024\u00d71024 label/topology master into six exact fractional-cell tile documents.",
+      "error": null,
+      "fixture": "deterministic public 1024\u00d71024 four-label field; 3 columns \u00d7 2 rows",
+      "id": "mural-topology-partition-1024-3x2",
+      "implementation": "production partition_master_topology without audit-oracle replay",
+      "measured_iterations": 3,
+      "median_ms": 3036.194791,
+      "metadata": {
+        "authoritative_master_topology_setup_ms": 2302.401,
+        "excluded_from_timing": [
+          "authoritative master topology construction",
+          "label partition construction",
+          "independent acceptance-oracle replay"
+        ],
+        "fractional_clip_required": true,
+        "label_partition_setup_ms": 36.437,
+        "master_labels_sha256": "7b5a9f3625c375f585c0064ddb05f4e37e7b71c4178f62998ab263b5b6c04d15",
+        "master_pixel_count": 1048576,
+        "panel_count": 6
+      },
+      "min_ms": 3020.079375,
+      "p95_ms": 3059.6083297,
+      "peak_python_bytes": 0,
+      "process_peak_rss_bytes": 186040320,
+      "samples": [
+        {
+          "duration_ms": 3062.209834,
+          "output_bytes": 17465,
+          "peak_python_bytes": 0
+        },
+        {
+          "duration_ms": 3036.194791,
+          "output_bytes": 17465,
+          "peak_python_bytes": 0
+        },
+        {
+          "duration_ms": 3020.079375,
+          "output_bytes": 17465,
+          "peak_python_bytes": 0
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 0
+    }
+  ],
+  "generated_at": "2026-07-17T07:25:46.830211Z",
+  "git_commit": "2aeb2ea3d29a6d189e446d434e024855fef3ff78",
+  "machine": {
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.9.6",
+    "release": "25.3.0",
+    "system": "Darwin"
+  },
+  "run_id": "baseline-2026-07-17-mural-partition",
+  "schema_version": 1
+}

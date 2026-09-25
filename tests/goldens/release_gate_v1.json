@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "manual_print_gate": "not_observed",
+  "feature_intent": [
+    {"kind": "dot", "minimum_width_mm": 0.4},
+    {"kind": "enclosed_hole", "minimum_width_mm": 2.0},
+    {"kind": "line", "minimum_width_mm": 0.2},
+    {"kind": "neck", "minimum_width_mm": 0.2}
+  ],
+  "common": {
+    "label_sha256": "f40f5d88ea8c8dfae257dd7b85c71a49f069475d60a01648ff0e30823414fd53",
+    "island_count": 6,
+    "contour_count": 11,
+    "shared_edge_count": 28,
+    "part_count": 7,
+    "mesh_count": 7,
+    "geometry_fingerprint": "a17280a907f12750f25eb44aa677ab4dda705bf0073c550cb06af09d8cb44962",
+    "quality_fingerprint": "befeb3b84d66b36a32c76a1b8ecc39a018f3f05400dcb43fbbe1d49ca04cc4c3"
+  },
+  "profiles": {
+    "0.2/0.10": {"package_sha256": "61c4f816abf22d44f906d3cbfb4cb4bdd6d98302927a6952c27d5630ff649e23"},
+    "0.4/0.20": {"package_sha256": "a67f5a83d51abb9d3468eff8d2ccbd7545c268e077840fdebb15c2626697bb89"}
+  }
+}

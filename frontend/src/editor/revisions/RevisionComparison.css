@@ -1,0 +1,140 @@
+.revision-comparison {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.revision-comparison-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.revision-comparison h4,
+.revision-comparison h5 {
+  margin: 0;
+}
+
+.revision-comparison h4 {
+  margin-top: 3px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.revision-comparison-heading > span,
+.revision-delta-group h5 {
+  color: var(--dim);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.revision-comparison label {
+  display: grid;
+  gap: 5px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.revision-comparison select {
+  min-width: 0;
+  padding: 8px 9px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--text);
+  background: #0b1015;
+  font: inherit;
+}
+
+.revision-comparison-empty,
+.revision-comparison-error {
+  margin: 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.revision-comparison-error {
+  padding: 9px;
+  border: 1px solid rgba(255, 129, 120, 0.25);
+  border-radius: 7px;
+}
+
+.revision-comparison-error p { margin: 0 0 7px; }
+
+.revision-comparison-error button {
+  padding: 0;
+  border: 0;
+  color: var(--warning);
+  background: transparent;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.revision-delta-group {
+  display: grid;
+  gap: 7px;
+}
+
+.revision-delta-group ul {
+  display: grid;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.revision-delta-group li {
+  display: grid;
+  grid-template-columns: minmax(100px, 0.8fr) minmax(0, 1fr);
+  gap: 9px;
+  align-items: center;
+  padding: 7px 8px;
+  border: 1px solid #202932;
+  border-radius: 7px;
+  background: #0b1015;
+  font-size: 9px;
+}
+
+.revision-delta-group li > strong {
+  overflow: hidden;
+  color: #b9c3ca;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+.revision-delta-group li > span {
+  display: flex;
+  min-width: 0;
+  gap: 6px;
+  justify-content: flex-end;
+  overflow-wrap: anywhere;
+}
+
+.revision-delta-group li > span em {
+  padding: 3px 6px;
+  border-radius: 999px;
+  color: var(--accent);
+  background: rgba(71, 223, 185, 0.08);
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.revision-delta-group li > span em[data-reproducibility='best_effort'] {
+  color: var(--warning);
+  background: rgba(245, 189, 104, 0.08);
+}
+
+.revision-delta-group del { color: #bc7770; }
+.revision-delta-group ins { color: var(--accent); text-decoration: none; }
+.revision-delta-group li[data-kind='removed'] > span { color: #bc7770; }
+.revision-delta-group li[data-kind='added'] > span { color: var(--accent); }
+.revision-delta-group li[data-kind='changed'] > span { color: var(--warning); }

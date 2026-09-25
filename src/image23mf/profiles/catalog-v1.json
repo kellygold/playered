@@ -1,0 +1,92 @@
+{
+  "catalog_id": "image23mf-bundled-printers",
+  "catalog_version": "2026.07.16",
+  "printers": [
+    {
+      "default_nozzle_id": "nozzle-0.4-hardened-steel",
+      "default_plate_id": "textured-pei",
+      "display_name": "Bambu Lab P2S",
+      "id": "bambu-p2s",
+      "manufacturer": "Bambu Lab",
+      "nozzles": [
+        {
+          "default_layer_height_mm": 0.1,
+          "diameter_mm": 0.2,
+          "id": "nozzle-0.2-hardened-steel",
+          "material": "hardened_steel",
+          "max_layer_height_mm": 0.14,
+          "min_layer_height_mm": 0.04,
+          "process_profile_names": [
+            "0.08mm High Quality @BBL P2S 0.2 nozzle",
+            "0.10mm Standard @BBL P2S 0.2 nozzle",
+            "0.12mm Balanced Quality @BBL P2S 0.2 nozzle"
+          ],
+          "recommended_layer_heights_mm": [0.08, 0.1, 0.12],
+          "slicer_machine_name": "Bambu Lab P2S 0.2 nozzle",
+          "slicer_variant": "0.2"
+        },
+        {
+          "default_layer_height_mm": 0.2,
+          "diameter_mm": 0.4,
+          "id": "nozzle-0.4-hardened-steel",
+          "material": "hardened_steel",
+          "max_layer_height_mm": 0.28,
+          "min_layer_height_mm": 0.08,
+          "process_profile_names": [
+            "0.08mm High Quality @BBL P2S",
+            "0.12mm High Quality @BBL P2S",
+            "0.16mm Standard @BBL P2S",
+            "0.20mm Standard @BBL P2S",
+            "0.24mm Standard @BBL P2S"
+          ],
+          "recommended_layer_heights_mm": [0.08, 0.12, 0.16, 0.2, 0.24],
+          "slicer_machine_name": "Bambu Lab P2S 0.4 nozzle",
+          "slicer_variant": "0.4"
+        }
+      ],
+      "plates": [
+        {
+          "display_name": "Textured PEI Plate",
+          "first_layer_finish": "textured",
+          "id": "textured-pei",
+          "notes": "Default installed P2S plate. Plate texture affects only a model face printed against the plate; face-up artwork retains its top-surface finish.",
+          "slicer_name": "Textured PEI Plate",
+          "surface": "powder-coated textured PEI"
+        }
+      ],
+      "printable_area": {
+        "depth_mm": 256,
+        "excluded_rectangles": [],
+        "height_mm": 256,
+        "origin_x_mm": 0,
+        "origin_y_mm": 0,
+        "width_mm": 256
+      },
+      "slicer_model_name": "Bambu Lab P2S",
+      "technology": "FFF",
+      "thickness_policy": {
+        "default_art_target_mm": 0.6,
+        "default_base_target_mm": 1.2,
+        "max_art_mm": 5,
+        "max_base_mm": 10,
+        "max_total_mm": 12,
+        "min_art_layers": 1,
+        "min_base_mm": 0.4,
+        "require_layer_multiples": true
+      }
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "captured_on": "2026-07-16",
+    "name": "Bambu Studio bundled system profiles",
+    "profile_paths": [
+      "profiles/BBL/machine/Bambu Lab P2S.json",
+      "profiles/BBL/machine/Bambu Lab P2S 0.2 nozzle.json",
+      "profiles/BBL/machine/Bambu Lab P2S 0.4 nozzle.json",
+      "profiles/BBL/machine/fdm_machine_common.json",
+      "profiles/BBL/process/* @BBL P2S*.json"
+    ],
+    "version": "02.07.01.62"
+  }
+}

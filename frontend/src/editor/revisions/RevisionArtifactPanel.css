@@ -1,0 +1,85 @@
+.revision-artifacts {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.revision-artifacts-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.revision-artifacts h4 { margin: 0; color: var(--text); font-size: 13px; }
+.revision-artifacts-heading > span { color: var(--dim); font-size: 9px; text-transform: uppercase; }
+.revision-artifact-empty { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.5; }
+
+.revision-artifacts > ul {
+  display: grid;
+  gap: 7px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.revision-artifact {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #222c35;
+  border-radius: 8px;
+  background: #0b1015;
+}
+
+.revision-artifact[data-integrity='verified'] { border-color: rgba(71, 223, 185, 0.26); }
+.revision-artifact[data-integrity='missing'],
+.revision-artifact[data-integrity='corrupt'] { border-color: rgba(255, 129, 120, 0.32); }
+
+.revision-artifact-title,
+.revision-artifact-actions,
+.revision-artifact-confirm > div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.revision-artifact-title div { min-width: 0; }
+.revision-artifact-title strong,
+.revision-artifact-title small { display: block; }
+.revision-artifact-title strong { color: #c5cdd3; font-size: 10px; text-transform: capitalize; }
+.revision-artifact-title small { margin-top: 2px; color: var(--dim); font-size: 8px; }
+.revision-artifact-title > span { color: var(--muted); font-size: 8px; text-transform: uppercase; }
+
+.revision-artifact-actions { flex-wrap: wrap; justify-content: flex-start; }
+.revision-artifact-actions a,
+.revision-artifact-actions button,
+.revision-artifact-confirm button {
+  padding: 0;
+  border: 0;
+  color: var(--accent);
+  background: transparent;
+  font-size: 9px;
+  cursor: pointer;
+}
+.revision-artifact-actions button:disabled,
+.revision-artifact-confirm button:disabled { opacity: 0.5; cursor: default; }
+.revision-artifact-actions .revision-artifact-delete { color: #d58f88; }
+.revision-artifact-unavailable { color: var(--dim); font-size: 9px; }
+.revision-artifact > p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.45; }
+
+.revision-artifact-confirm {
+  display: grid;
+  gap: 7px;
+  padding: 9px;
+  border: 1px solid rgba(245, 189, 104, 0.25);
+  border-radius: 7px;
+  background: rgba(245, 189, 104, 0.04);
+}
+.revision-artifact-confirm strong { color: var(--warning); font-size: 10px; }
+.revision-artifact-confirm p { margin: 0; color: var(--muted); font-size: 9px; line-height: 1.45; }
+.revision-artifact-confirm > div { justify-content: flex-end; }
+.revision-artifact-confirm > div button:last-child { color: #e49a92; }

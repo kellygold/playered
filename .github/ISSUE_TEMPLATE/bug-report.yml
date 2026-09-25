@@ -1,0 +1,22 @@
+name: Bug report
+description: Report a reproducible problem using non-private sample data.
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Versions
+      description: App commit/version, macOS, CPU architecture, Python, Node and Bambu Studio versions.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: What happened?
+      description: Steps, expected result, actual result, and a synthetic or redistributable sample if needed.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Redacted diagnostics
+      description: Relevant errors only. Do not attach keys, private images, personal paths or workspace backups.

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "catalog_id": "bambu-lab-starter",
+  "catalog_version": "2026.07.16",
+  "display_name": "Bambu Lab starter colors",
+  "entries": [
+    {
+      "id": "bambu-matte-bone-white",
+      "manufacturer": "Bambu Lab",
+      "family": "Matte",
+      "name": "Bone White",
+      "hex_color": "#CBC6B8",
+      "material": "PLA",
+      "finish": "Matte"
+    },
+    {
+      "id": "bambu-matte-mandarin-orange",
+      "manufacturer": "Bambu Lab",
+      "family": "Matte",
+      "name": "Mandarin Orange",
+      "hex_color": "#F99963",
+      "material": "PLA",
+      "finish": "Matte"
+    },
+    {
+      "id": "bambu-matte-marine-blue",
+      "manufacturer": "Bambu Lab",
+      "family": "Matte",
+      "name": "Marine Blue",
+      "hex_color": "#0078BF",
+      "material": "PLA",
+      "finish": "Matte"
+    },
+    {
+      "id": "bambu-matte-charcoal",
+      "manufacturer": "Bambu Lab",
+      "family": "Matte",
+      "name": "Charcoal",
+      "hex_color": "#000000",
+      "material": "PLA",
+      "finish": "Matte"
+    }
+  ]
+}

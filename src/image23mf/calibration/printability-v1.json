@@ -1,0 +1,238 @@
+{
+  "catalog_id": "image23mf-bundled-printability",
+  "catalog_version": "2026.07.16",
+  "profiles": [
+    {
+      "display_name": "Bambu P2S · 0.2 mm hardened steel · PLA baseline",
+      "evidence_status": "pending_print_calibration",
+      "id": "bambu-p2s-0.2-hardened-steel-pla-v1",
+      "material_class": "pla",
+      "nozzle_diameter_mm": 0.2,
+      "nozzle_id": "nozzle-0.2-hardened-steel",
+      "printer_id": "bambu-p2s",
+      "recommendations": {
+        "long_line_minimum_length_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["line"],
+          "evidence_run_ids": [],
+          "rationale": "Four nozzle diameters separates intentional extended linework from compact dot-like debris while line width is evaluated independently.",
+          "unit": "mm",
+          "value": 0.8
+        },
+        "maximum_tiny_hole_area_mm2": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["hole"],
+          "evidence_run_ids": [],
+          "rationale": "The area of a 0.4 mm diameter circle seeds review for enclosed negative features below roughly two nozzle diameters.",
+          "unit": "mm2",
+          "value": 0.125664
+        },
+        "maximum_tiny_hole_diameter_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["hole"],
+          "evidence_run_ids": [],
+          "rationale": "Negative details below two nozzle diameters are provisional review candidates until a printed hole sweep is measured.",
+          "unit": "mm",
+          "value": 0.4
+        },
+        "minimum_gap_width_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["gap"],
+          "evidence_run_ids": [],
+          "rationale": "A 1.25-nozzle gap is a provisional separation threshold that should be replaced by the first measured local coupon.",
+          "unit": "mm",
+          "value": 0.25
+        },
+        "minimum_island_area_mm2": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["dot"],
+          "evidence_run_ids": [],
+          "rationale": "The area of a 0.3 mm diameter circle pairs with the diameter threshold so compact islands receive review without treating area alone as proof of failure.",
+          "unit": "mm2",
+          "value": 0.070686
+        },
+        "minimum_island_diameter_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["dot"],
+          "evidence_run_ids": [],
+          "rationale": "One and a half nozzle diameters is a conservative starting diameter for isolated dots pending the printed sweep.",
+          "unit": "mm",
+          "value": 0.3
+        },
+        "minimum_line_width_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["line"],
+          "evidence_run_ids": [],
+          "rationale": "A 1.2-nozzle line width allows modest deposited-line spread while retaining long-line protection rather than deleting the feature.",
+          "unit": "mm",
+          "value": 0.24
+        },
+        "minimum_neck_width_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["neck"],
+          "evidence_run_ids": [],
+          "rationale": "One and a half nozzle diameters seeds a conservative supported-neck warning without claiming a measured breakage limit.",
+          "unit": "mm",
+          "value": 0.3
+        },
+        "minimum_ring_width_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["hole"],
+          "evidence_run_ids": [],
+          "rationale": "A ring wall of 1.5 nozzle diameters is provisionally required before offering a destructive ring-collapse action.",
+          "unit": "mm",
+          "value": 0.3
+        },
+        "smoothing_radius_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["dot", "gap", "hole", "line", "neck"],
+          "evidence_run_ids": [],
+          "rationale": "Zero is the safe default: calibration should suggest warnings, never silently smooth or dilate artwork.",
+          "unit": "mm",
+          "value": 0
+        }
+      },
+      "reviewed_on": "2026-07-16",
+      "sweep": {
+        "dot_diameters_mm": [0.16, 0.2, 0.24, 0.28, 0.32, 0.36],
+        "gap_widths_mm": [0.16, 0.2, 0.24, 0.28, 0.32, 0.36],
+        "hole_diameters_mm": [0.2, 0.28, 0.36, 0.44, 0.52, 0.6],
+        "line_widths_mm": [0.16, 0.2, 0.24, 0.28, 0.32, 0.36],
+        "neck_widths_mm": [0.16, 0.2, 0.24, 0.28, 0.32, 0.36]
+      }
+    },
+    {
+      "display_name": "Bambu P2S · 0.4 mm hardened steel · PLA baseline",
+      "evidence_status": "pending_print_calibration",
+      "id": "bambu-p2s-0.4-hardened-steel-pla-v1",
+      "material_class": "pla",
+      "nozzle_diameter_mm": 0.4,
+      "nozzle_id": "nozzle-0.4-hardened-steel",
+      "printer_id": "bambu-p2s",
+      "recommendations": {
+        "long_line_minimum_length_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["line"],
+          "evidence_run_ids": [],
+          "rationale": "Four nozzle diameters separates intentional extended linework from compact dot-like debris while line width is evaluated independently.",
+          "unit": "mm",
+          "value": 1.6
+        },
+        "maximum_tiny_hole_area_mm2": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["hole"],
+          "evidence_run_ids": [],
+          "rationale": "The area of a 0.8 mm diameter circle seeds review for enclosed negative features below roughly two nozzle diameters.",
+          "unit": "mm2",
+          "value": 0.502655
+        },
+        "maximum_tiny_hole_diameter_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["hole"],
+          "evidence_run_ids": [],
+          "rationale": "Negative details below two nozzle diameters are provisional review candidates until a printed hole sweep is measured.",
+          "unit": "mm",
+          "value": 0.8
+        },
+        "minimum_gap_width_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["gap"],
+          "evidence_run_ids": [],
+          "rationale": "A 1.25-nozzle gap is a provisional separation threshold that should be replaced by the first measured local coupon.",
+          "unit": "mm",
+          "value": 0.5
+        },
+        "minimum_island_area_mm2": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["dot"],
+          "evidence_run_ids": [],
+          "rationale": "The area of a 0.6 mm diameter circle pairs with the diameter threshold so compact islands receive review without treating area alone as proof of failure.",
+          "unit": "mm2",
+          "value": 0.282743
+        },
+        "minimum_island_diameter_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["dot"],
+          "evidence_run_ids": [],
+          "rationale": "One and a half nozzle diameters is a conservative starting diameter for isolated dots pending the printed sweep.",
+          "unit": "mm",
+          "value": 0.6
+        },
+        "minimum_line_width_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["line"],
+          "evidence_run_ids": [],
+          "rationale": "A 1.2-nozzle line width allows modest deposited-line spread while retaining long-line protection rather than deleting the feature.",
+          "unit": "mm",
+          "value": 0.48
+        },
+        "minimum_neck_width_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["neck"],
+          "evidence_run_ids": [],
+          "rationale": "One and a half nozzle diameters seeds a conservative supported-neck warning without claiming a measured breakage limit.",
+          "unit": "mm",
+          "value": 0.6
+        },
+        "minimum_ring_width_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["hole"],
+          "evidence_run_ids": [],
+          "rationale": "A ring wall of 1.5 nozzle diameters is provisionally required before offering a destructive ring-collapse action.",
+          "unit": "mm",
+          "value": 0.6
+        },
+        "smoothing_radius_mm": {
+          "basis": "engineering_baseline",
+          "confidence": "provisional",
+          "evidence_feature_kinds": ["dot", "gap", "hole", "line", "neck"],
+          "evidence_run_ids": [],
+          "rationale": "Zero is the safe default: calibration should suggest warnings, never silently smooth or dilate artwork.",
+          "unit": "mm",
+          "value": 0
+        }
+      },
+      "reviewed_on": "2026-07-16",
+      "sweep": {
+        "dot_diameters_mm": [0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+        "gap_widths_mm": [0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+        "hole_diameters_mm": [0.4, 0.56, 0.72, 0.88, 1.04, 1.2],
+        "line_widths_mm": [0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+        "neck_widths_mm": [0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
+      }
+    }
+  ],
+  "schema_version": 1,
+  "source": {
+    "captured_on": "2026-07-16",
+    "method": "Nozzle-relative engineering seeds chosen from the existing physical risk contracts. Values are explicitly provisional until a local printed coupon is measured and recorded.",
+    "name": "Image23MF local printability calibration",
+    "references": [
+      "image23mf-bundled-printers@2026.07.16",
+      "docs/risk-taxonomy.md",
+      "docs/clearance-analysis.md",
+      "docs/hole-ring-correction.md",
+      "docs/contour-cleanup.md"
+    ],
+    "version": "1"
+  }
+}

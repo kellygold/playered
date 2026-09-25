@@ -1,0 +1,389 @@
+{
+  "cases": [
+    {
+      "category": "startup",
+      "description": "Fresh workspace migration, API construction, and OpenAPI generation.",
+      "error": null,
+      "fixture": "fresh temporary workspace",
+      "id": "startup-cold",
+      "implementation": "current SQLite/FastAPI startup",
+      "measured_iterations": 3,
+      "median_ms": 227.157375,
+      "metadata": {},
+      "min_ms": 217.207208,
+      "p95_ms": 247.8014247,
+      "peak_python_bytes": 3410563,
+      "process_peak_rss_bytes": 106315776,
+      "samples": [
+        {
+          "duration_ms": 227.157375,
+          "output_bytes": 237945,
+          "peak_python_bytes": 3410563
+        },
+        {
+          "duration_ms": 250.095208,
+          "output_bytes": 237945,
+          "peak_python_bytes": 3297365
+        },
+        {
+          "duration_ms": 217.207208,
+          "output_bytes": 237945,
+          "peak_python_bytes": 3287173
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 0
+    },
+    {
+      "category": "reopen",
+      "description": "Open a migrated database, list 25 projects, and retrieve one project.",
+      "error": null,
+      "fixture": "25-project temporary workspace",
+      "id": "project-reopen-warm",
+      "implementation": "current SQLite repositories",
+      "measured_iterations": 7,
+      "median_ms": 0.797791,
+      "metadata": {},
+      "min_ms": 0.753875,
+      "p95_ms": 0.8334204999999999,
+      "peak_python_bytes": 26241,
+      "process_peak_rss_bytes": 106446848,
+      "samples": [
+        {
+          "duration_ms": 0.826542,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 0.797791,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 0.830708,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 0.834583,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 0.773708,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 0.753875,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        },
+        {
+          "duration_ms": 0.760792,
+          "output_bytes": 656,
+          "peak_python_bytes": 26241
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "preview",
+      "description": "Decode and classify the native production Wager image to four labels.",
+      "error": null,
+      "fixture": "real-private/wager-production.png (2520x1680)",
+      "id": "preview-cold-wager",
+      "implementation": "production chunked CIELAB classifier",
+      "measured_iterations": 3,
+      "median_ms": 410.601167,
+      "metadata": {
+        "distance": "CIE76",
+        "dither": "none",
+        "palette": [
+          "#F2D6AA",
+          "#E75B12",
+          "#0A3A78",
+          "#202428"
+        ]
+      },
+      "min_ms": 406.250708,
+      "p95_ms": 415.1989286,
+      "peak_python_bytes": 34240746,
+      "process_peak_rss_bytes": 191528960,
+      "samples": [
+        {
+          "duration_ms": 415.709791,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34240746
+        },
+        {
+          "duration_ms": 410.601167,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34220555
+        },
+        {
+          "duration_ms": 406.250708,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34220555
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 0
+    },
+    {
+      "category": "preview",
+      "description": "Recompute four labels from a decoded native production Wager image.",
+      "error": null,
+      "fixture": "preloaded wager-production.png (2520x1680 RGBA)",
+      "id": "preview-warm-wager",
+      "implementation": "production chunked CIELAB classifier",
+      "measured_iterations": 7,
+      "median_ms": 359.717291,
+      "metadata": {
+        "distance": "CIE76",
+        "dither": "none",
+        "palette": [
+          "#F2D6AA",
+          "#E75B12",
+          "#0A3A78",
+          "#202428"
+        ]
+      },
+      "min_ms": 359.243,
+      "p95_ms": 363.1056708,
+      "peak_python_bytes": 34219456,
+      "process_peak_rss_bytes": 195280896,
+      "samples": [
+        {
+          "duration_ms": 364.211583,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 359.613791,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 359.243,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 359.68175,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219456
+        },
+        {
+          "duration_ms": 360.525209,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 360.457917,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 359.717291,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34219132
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "palette",
+      "description": "Fit and classify a deterministic four-color palette for Wager.",
+      "error": null,
+      "fixture": "preloaded wager-production.png (2520x1680 RGBA)",
+      "id": "auto-palette-wager",
+      "implementation": "production sampled CIELAB k-means and chunked classifier",
+      "measured_iterations": 5,
+      "median_ms": 434.396208,
+      "metadata": {
+        "color_count": 4,
+        "distance": "CIE76",
+        "sampling": "seeded-systematic"
+      },
+      "min_ms": 413.813958,
+      "p95_ms": 444.7945918,
+      "peak_python_bytes": 34223818,
+      "process_peak_rss_bytes": 197214208,
+      "samples": [
+        {
+          "duration_ms": 446.714667,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34223083
+        },
+        {
+          "duration_ms": 434.396208,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34222901
+        },
+        {
+          "duration_ms": 437.114291,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34223486
+        },
+        {
+          "duration_ms": 416.954084,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34223818
+        },
+        {
+          "duration_ms": 413.813958,
+          "output_bytes": 4233600,
+          "peak_python_bytes": 34222901
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "vectorization",
+      "description": "Trace the nozzle-scale synthetic binary mask to SVG.",
+      "error": null,
+      "fixture": "synthetic/geometry-nozzle-040.png",
+      "id": "vectorization-potrace",
+      "implementation": "installed Potrace adapter",
+      "measured_iterations": 5,
+      "median_ms": 28.575084,
+      "metadata": {
+        "openscad_version": "2026.06.12",
+        "potrace_version": "1.16"
+      },
+      "min_ms": 24.375,
+      "p95_ms": 31.843183399999997,
+      "peak_python_bytes": 78617,
+      "process_peak_rss_bytes": 197246976,
+      "samples": [
+        {
+          "duration_ms": 24.375,
+          "output_bytes": 5848,
+          "peak_python_bytes": 78617
+        },
+        {
+          "duration_ms": 28.918917,
+          "output_bytes": 5848,
+          "peak_python_bytes": 78617
+        },
+        {
+          "duration_ms": 28.575084,
+          "output_bytes": 5848,
+          "peak_python_bytes": 78617
+        },
+        {
+          "duration_ms": 28.3465,
+          "output_bytes": 5848,
+          "peak_python_bytes": 78617
+        },
+        {
+          "duration_ms": 32.57425,
+          "output_bytes": 5848,
+          "peak_python_bytes": 78617
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "geometry",
+      "description": "Extrude a 120x80 mm base and traced relief to binary STL.",
+      "error": null,
+      "fixture": "Potrace SVG from geometry-nozzle-040.png",
+      "id": "geometry-openscad",
+      "implementation": "installed OpenSCAD reference adapter",
+      "measured_iterations": 3,
+      "median_ms": 123.134125,
+      "metadata": {
+        "openscad_version": "2026.06.12",
+        "potrace_version": "1.16"
+      },
+      "min_ms": 121.050083,
+      "p95_ms": 141.54295,
+      "peak_python_bytes": 78726,
+      "process_peak_rss_bytes": 197263360,
+      "samples": [
+        {
+          "duration_ms": 123.134125,
+          "output_bytes": 9595792,
+          "peak_python_bytes": 78611
+        },
+        {
+          "duration_ms": 121.050083,
+          "output_bytes": 9595792,
+          "peak_python_bytes": 78726
+        },
+        {
+          "duration_ms": 143.588375,
+          "output_bytes": 9595792,
+          "peak_python_bytes": 78611
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    },
+    {
+      "category": "packaging",
+      "description": "Create a deterministic compressed package from representative artifacts.",
+      "error": null,
+      "fixture": "Wager PNG, labels, SVG, STL, and manifest",
+      "id": "packaging-reference",
+      "implementation": "reference ZIP packaging (pre-3MF writer)",
+      "measured_iterations": 5,
+      "median_ms": 605.402041,
+      "metadata": {
+        "openscad_version": "2026.06.12",
+        "potrace_version": "1.16",
+        "replacement_gate": "Replace with production 3MF packaging benchmark in M2."
+      },
+      "min_ms": 602.750125,
+      "p95_ms": 623.2611998,
+      "peak_python_bytes": 34219132,
+      "process_peak_rss_bytes": 238125056,
+      "samples": [
+        {
+          "duration_ms": 605.402041,
+          "output_bytes": 7697314,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 606.497167,
+          "output_bytes": 7697314,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 602.750125,
+          "output_bytes": 7697314,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 627.452208,
+          "output_bytes": 7697314,
+          "peak_python_bytes": 34219132
+        },
+        {
+          "duration_ms": 603.290625,
+          "output_bytes": 7697314,
+          "peak_python_bytes": 34219132
+        }
+      ],
+      "status": "passed",
+      "warmup_iterations": 1
+    }
+  ],
+  "generated_at": "2026-07-15T21:00:20.959684Z",
+  "git_commit": "009df39",
+  "machine": {
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.9.6",
+    "release": "25.3.0",
+    "system": "Darwin"
+  },
+  "run_id": "baseline-2026-07-16-palette",
+  "schema_version": 1
+}

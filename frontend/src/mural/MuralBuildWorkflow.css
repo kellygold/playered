@@ -1,0 +1,293 @@
+.mural-build {
+  display: grid;
+  min-width: 0;
+  gap: 12px;
+  color: var(--i23-editor-text, #182027);
+}
+
+.mural-build__heading,
+.mural-build__progress > div,
+.mural-build__verified {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mural-build__heading h2,
+.mural-build__heading p,
+.mural-build__failure p,
+.mural-build__action p,
+.mural-build__announcement {
+  margin: 0;
+}
+
+.mural-build__heading h2 {
+  font-size: 16px;
+}
+
+.mural-build__heading p,
+.mural-build__action p,
+.mural-build__announcement,
+.mural-build__failure p {
+  color: var(--i23-editor-muted, #5d6c78);
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+.mural-build__phase {
+  flex: none;
+  max-width: 126px;
+  padding: 4px 7px;
+  border: 1px solid var(--i23-editor-line, #c8d1d9);
+  border-radius: 999px;
+  font-size: 8px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.mural-build__phase[data-phase='succeeded'] {
+  border-color: var(--i23-editor-accent, #147d67);
+  color: var(--i23-editor-accent, #147d67);
+}
+
+.mural-build__phase[data-phase='failed'],
+.mural-build__phase[data-phase='stale'],
+.mural-build__phase[data-phase='validation-blocked'] {
+  border-color: var(--i23-editor-danger, #9f2e27);
+  color: var(--i23-editor-danger, #9f2e27);
+}
+
+.mural-build__steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mural-build__steps li {
+  display: grid;
+  min-width: 0;
+  gap: 4px;
+  padding: 7px;
+  border: 1px solid var(--i23-editor-line-soft, #dce2e7);
+  border-radius: 7px;
+  background: var(--i23-editor-panel-raised, #fff);
+}
+
+.mural-build__steps li[data-complete='true'] {
+  border-color: color-mix(in srgb, var(--i23-editor-accent, #147d67) 55%, white);
+}
+
+.mural-build__steps li[data-active='true'] {
+  border-color: #ec6a42;
+}
+
+.mural-build__steps b {
+  display: grid;
+  width: 17px;
+  height: 17px;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #667783;
+  font-size: 8px;
+}
+
+.mural-build__steps li[data-complete='true'] b {
+  background: var(--i23-editor-accent, #147d67);
+}
+
+.mural-build__steps span {
+  overflow-wrap: anywhere;
+  font-size: 8px;
+  font-weight: 760;
+}
+
+.mural-build__announcement {
+  min-height: 13px;
+}
+
+.mural-build__progress,
+.mural-build__failure,
+.mural-build__action,
+.mural-build__verified,
+.mural-build__assembly-options {
+  padding: 10px;
+  border: 1px solid var(--i23-editor-line-soft, #dce2e7);
+  border-radius: 9px;
+  background: var(--i23-editor-panel-soft, #f6f8fa);
+}
+
+.mural-build__assembly-options {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.mural-build__assembly-options legend {
+  padding: 0 4px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.mural-build__assembly-toggle,
+.mural-build__assembly-grid label {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.mural-build__assembly-toggle input,
+.mural-build__assembly-grid input {
+  flex: none;
+  margin: 2px 0 0;
+  accent-color: var(--i23-editor-accent, #147d67);
+}
+
+.mural-build__assembly-toggle > span {
+  display: grid;
+  gap: 2px;
+}
+
+.mural-build__assembly-toggle label,
+.mural-build__assembly-toggle small,
+.mural-build__assembly-grid span {
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.mural-build__assembly-toggle label {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.mural-build__assembly-toggle small {
+  color: var(--i23-editor-muted, #5d6c78);
+}
+
+.mural-build__assembly-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px 12px;
+  padding: 8px;
+  border-radius: 7px;
+  background: var(--i23-editor-panel-raised, #fff);
+}
+
+.mural-build__progress {
+  display: grid;
+  gap: 8px;
+}
+
+.mural-build__progress strong,
+.mural-build__progress span,
+.mural-build__verified strong,
+.mural-build__verified span,
+.mural-build__verified small {
+  font-size: 9px;
+}
+
+.mural-build__validation-note {
+  max-width: 170px;
+  color: var(--i23-editor-danger, #9f2e27) !important;
+  font-weight: 760;
+  line-height: 1.4;
+}
+
+.mural-build__progress progress {
+  width: 100%;
+  accent-color: #ec6a42;
+}
+
+.mural-build button,
+.mural-build__verified a {
+  min-height: 31px;
+  padding: 7px 10px;
+  border: 1px solid var(--i23-editor-line, #c8d1d9);
+  border-radius: 7px;
+  color: var(--i23-editor-text, #182027);
+  background: var(--i23-editor-panel-raised, #fff);
+  font-size: 9px;
+  font-weight: 780;
+  cursor: pointer;
+}
+
+.mural-build button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.mural-build__action {
+  display: grid;
+  gap: 6px;
+}
+
+.mural-build__action button,
+.mural-build__verified a {
+  border-color: #b64b2a;
+  color: #fff;
+  background: #c65330;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mural-build__failure {
+  display: grid;
+  gap: 6px;
+  border-left: 3px solid var(--i23-editor-danger, #9f2e27);
+}
+
+.mural-build__result {
+  display: grid;
+  gap: 14px;
+}
+
+.mural-build__verified {
+  align-items: center;
+  border-left: 3px solid var(--i23-editor-accent, #147d67);
+}
+
+.mural-build__verified > div {
+  display: grid;
+  gap: 3px;
+}
+
+.mural-build__downloads {
+  display: grid !important;
+  min-width: 190px;
+  gap: 6px !important;
+}
+
+.mural-build__downloads a:not(:first-child) {
+  border-color: var(--i23-editor-line, #c8d1d9);
+  color: var(--i23-editor-text, #182027);
+  background: var(--i23-editor-panel-raised, #fff);
+}
+
+.mural-build__verified span,
+.mural-build__verified small {
+  color: var(--i23-editor-muted, #5d6c78);
+}
+
+@media (max-width: 540px), (max-height: 560px) {
+  .mural-build__heading,
+  .mural-build__verified {
+    flex-direction: column;
+  }
+
+  .mural-build__steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mural-build__assembly-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mural-build__verified a {
+    width: 100%;
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "utc": "2026-09-24T02:52:03.523922+00:00",
+  "repository": "https://github.com/astral-sh/python-build-standalone",
+  "release": "20260728",
+  "asset": "cpython-3.12.13+20260728-aarch64-apple-darwin-pgo+lto-full.tar.zst",
+  "sha256": "24c3a622d27eb0509173fce7ad690983e33bfd5ba908d6c30744e871f0f2ccd2",
+  "release_sha256_matches": true,
+  "extracted_members": [
+    "python/PYTHON.json",
+    "python/install/lib/python3.12/LICENSE.txt",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/LICENSE.txt",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/cachecontrol/LICENSE.txt",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/certifi/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/distlib/LICENSE.txt",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/distro/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/msgpack/COPYING",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.APACHE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/packaging/LICENSE.BSD",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/pkg_resources/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/platformdirs/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/pygments/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/pyproject_hooks/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/requests/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/resolvelib/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/rich/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/tomli/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/tomli_w/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/truststore/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip-26.1.2.dist-info/licenses/src/pip/_vendor/urllib3/LICENSE.txt",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/cachecontrol/LICENSE.txt",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/certifi/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/distlib/LICENSE.txt",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/distro/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/idna/LICENSE.md",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/msgpack/COPYING",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/packaging/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/packaging/LICENSE.APACHE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/packaging/LICENSE.BSD",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/pkg_resources/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/platformdirs/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/pygments/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/requests/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/resolvelib/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/rich/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/tomli/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/tomli_w/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/truststore/LICENSE",
+    "python/install/lib/python3.12/site-packages/pip/_vendor/urllib3/LICENSE.txt",
+    "python/licenses/LICENSE.bdb.txt",
+    "python/licenses/LICENSE.bzip2.txt",
+    "python/licenses/LICENSE.cpython.txt",
+    "python/licenses/LICENSE.expat.txt",
+    "python/licenses/LICENSE.libX11.txt",
+    "python/licenses/LICENSE.libXau.txt",
+    "python/licenses/LICENSE.libedit.txt",
+    "python/licenses/LICENSE.libffi.txt",
+    "python/licenses/LICENSE.liblzma.txt",
+    "python/licenses/LICENSE.libuuid.txt",
+    "python/licenses/LICENSE.libxcb.txt",
+    "python/licenses/LICENSE.mpdecimal.txt",
+    "python/licenses/LICENSE.ncurses.txt",
+    "python/licenses/LICENSE.openssl-1.1.txt",
+    "python/licenses/LICENSE.openssl-3.txt",
+    "python/licenses/LICENSE.sqlite.txt",
+    "python/licenses/LICENSE.tcl.txt",
+    "python/licenses/LICENSE.tix.txt",
+    "python/licenses/LICENSE.zlib.txt"
+  ],
+  "archive_libpython_sha256": "3547ad6258264bc7b888e7c4070a25271326a58b3d8ec667dbc2d0990c96d9f0",
+  "installed_runtime_libpython_sha256": "55663863d65bdf03ed15f77fc97031bfea4c61e33854bdb76c0b92216dde03dd",
+  "installed_runtime_exact_match": false,
+  "extension_licenses": [
+    {
+      "module": "_bz2",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.bzip2.txt"
+      ],
+      "licenses": [
+        "bzip2-1.0.6"
+      ],
+      "links": [
+        {
+          "name": "bz2",
+          "path_static": "build/lib/libbz2.a"
+        }
+      ]
+    },
+    {
+      "module": "_ctypes",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.libffi.txt"
+      ],
+      "licenses": [
+        "MIT"
+      ],
+      "links": [
+        {
+          "name": "dl",
+          "system": true
+        },
+        {
+          "name": "ffi",
+          "path_static": "build/lib/libffi.a"
+        }
+      ]
+    },
+    {
+      "module": "_curses",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.ncurses.txt"
+      ],
+      "licenses": [
+        "X11"
+      ],
+      "links": [
+        {
+          "name": "ncurses",
+          "system": true
+        }
+      ]
+    },
+    {
+      "module": "_curses_panel",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.ncurses.txt"
+      ],
+      "licenses": [
+        "X11"
+      ],
+      "links": [
+        {
+          "name": "ncurses",
+          "system": true
+        },
+        {
+          "name": "panel",
+          "system": true
+        }
+      ]
+    },
+    {
+      "module": "_decimal",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.mpdecimal.txt"
+      ],
+      "licenses": [
+        "BSD-2-Clause"
+      ],
+      "links": [
+        {
+          "name": "mpdec",
+          "path_static": "build/lib/libmpdec.a"
+        }
+      ]
+    },
+    {
+      "module": "_elementtree",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.expat.txt"
+      ],
+      "licenses": [
+        "MIT"
+      ],
+      "links": [
+        {
+          "name": "expat",
+          "path_static": "build/lib/libexpat.a"
+        }
+      ]
+    },
+    {
+      "module": "_hashlib",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.openssl-1.1.txt",
+        "licenses/LICENSE.openssl-3.txt"
+      ],
+      "licenses": [
+        "Apache-2.0",
+        "OpenSSL"
+      ],
+      "links": [
+        {
+          "name": "crypto",
+          "path_static": "build/lib/libcrypto.a"
+        }
+      ]
+    },
+    {
+      "module": "_lzma",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.liblzma.txt"
+      ],
+      "licenses": [
+        "0BSD"
+      ],
+      "links": [
+        {
+          "name": "lzma",
+          "path_static": "build/lib/liblzma.a"
+        }
+      ]
+    },
+    {
+      "module": "_sqlite3",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.sqlite.txt"
+      ],
+      "licenses": [],
+      "links": [
+        {
+          "name": "sqlite3",
+          "path_static": "build/lib/libsqlite3.a"
+        }
+      ]
+    },
+    {
+      "module": "_ssl",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.openssl-1.1.txt",
+        "licenses/LICENSE.openssl-3.txt"
+      ],
+      "licenses": [
+        "Apache-2.0",
+        "OpenSSL"
+      ],
+      "links": [
+        {
+          "name": "crypto",
+          "path_static": "build/lib/libcrypto.a"
+        },
+        {
+          "name": "ssl",
+          "path_static": "build/lib/libssl.a"
+        }
+      ]
+    },
+    {
+      "module": "_tkinter",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.tcl.txt"
+      ],
+      "licenses": [
+        "TCL"
+      ],
+      "links": [
+        {
+          "name": "tcl9.0",
+          "system": true
+        },
+        {
+          "name": "tcl9tk9.0",
+          "system": true
+        }
+      ]
+    },
+    {
+      "module": "_uuid",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.libuuid.txt"
+      ],
+      "licenses": [
+        "BSD-3-Clause"
+      ],
+      "links": [
+        {
+          "name": "uuid",
+          "path_static": "build/lib/libuuid.a"
+        }
+      ]
+    },
+    {
+      "module": "pyexpat",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.expat.txt"
+      ],
+      "licenses": [
+        "MIT"
+      ],
+      "links": [
+        {
+          "name": "expat",
+          "path_static": "build/lib/libexpat.a"
+        }
+      ]
+    },
+    {
+      "module": "readline",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.libedit.txt",
+        "licenses/LICENSE.ncurses.txt"
+      ],
+      "licenses": [
+        "BSD-3-Clause",
+        "X11"
+      ],
+      "links": [
+        {
+          "name": "edit",
+          "system": true
+        },
+        {
+          "name": "ncurses",
+          "system": true
+        }
+      ]
+    },
+    {
+      "module": "zlib",
+      "in_core": false,
+      "license_paths": [
+        "licenses/LICENSE.zlib-ng.txt",
+        "licenses/LICENSE.zlib.txt"
+      ],
+      "licenses": [
+        "Zlib"
+      ],
+      "links": [
+        {
+          "name": "z",
+          "system": true
+        }
+      ]
+    }
+  ],
+  "installed_asset": "cpython-3.12.13+20260728-aarch64-apple-darwin-install_only_stripped.tar.gz",
+  "installed_asset_sha256": "2f18cdef4125ca1440dd1ba00ebcb267526efb532138c0860438f755ea4eebac",
+  "installed_asset_release_checksum_matches": true,
+  "installed_asset_libpython_sha256": "ac6a60105980c0e0dd8154a90ede1f7de6c212a03bffc044f133bc431322f861",
+  "provenance_note": "Full archive supplies license texts/PYTHON.json. uv installed stripped runtime and rewrote Mach-O LC_ID_DYLIB to installation path; all Mach-O section contents and UUID match stripped release asset.",
+  "installed_runtime_macho_uuid": "4c4c442455553144a1e8ca087ee47183",
+  "stripped_asset_macho_uuid": "4c4c442455553144a1e8ca087ee47183",
+  "installed_runtime_sections_exact_match": true,
+  "section_hashes": {
+    "__TEXT,__text": {
+      "size": 8963952,
+      "sha256": "478be870fe1a1c4bbaf2763008491b0ddf8303e6a04c5675dd4054fc45c13f80"
+    },
+    "__TEXT,__stubs": {
+      "size": 8064,
+      "sha256": "c75ea0130e0d62bd86eb0b667bc7e0eee8ba89ad0e20e231a73bc46552b84edf"
+    },
+    "__TEXT,__stub_helper": {
+      "size": 8088,
+      "sha256": "6e818ef14874f114889d78adf9136807f22df39440e0e4deb84b59e1454cf12a"
+    },
+    "__TEXT,__literals": {
+      "size": 6600,
+      "sha256": "1a949e382dc1d86a25c4656d3a4ff079b8fabb89faf0cdebbaaad1cb84819a39"
+    },
+    "__TEXT,__cstring": {
+      "size": 592264,
+      "sha256": "68906e0750a195b9b501eee91a1c737ba63b6c58d5fae4f667e2c69932e79101"
+    },
+    "__TEXT,__const": {
+      "size": 3579017,
+      "sha256": "2d84db7e896970a2cfc5d1ab193a0993c793aa7b17b26b907a2d9b22634749ec"
+    },
+    "__TEXT,__unwind_info": {
+      "size": 70160,
+      "sha256": "b1543808d2f8f11416dcce2a5d1f2193b95398ab20a5a7db52e716f831d744a4"
+    },
+    "__TEXT,__eh_frame": {
+      "size": 1856,
+      "sha256": "8f28951deb9a9770b159da5ee78f3d84d7d640cf013542208ae8a619ca87d914"
+    },
+    "__DATA_CONST,__got": {
+      "size": 600,
+      "sha256": "bd50e12c55dda3ee443c1cb6d71c7bcf6351c4ec96f7bc8d6adec015d1192eea"
+    },
+    "__DATA_CONST,__const": {
+      "size": 1132528,
+      "sha256": "ba585e4931ce1a15d2023aa210c929e292effa180b7b8e9ab0464a8cb1a4c68b"
+    },
+    "__DATA_CONST,__mod_init_func": {
+      "size": 8,
+      "sha256": "96ab2bce67b8ddaa1aff2ab67ae57cb2b467773975b95129a39dd8d601eb95c2"
+    },
+    "__DATA,__la_symbol_ptr": {
+      "size": 5376,
+      "sha256": "7ed94008b5da4460337072582a8c930fa2eae84909ec1efb5cd9dd46a7a0b49b"
+    },
+    "__DATA,__data": {
+      "size": 1123016,
+      "sha256": "35fd5f56a4329ec8848b5332d4c73304cd1c155133d95f8f919a81f9b8625419"
+    },
+    "__DATA,__thread_vars": {
+      "size": 48,
+      "sha256": "53d43e48ec48583c187f9a9957ed1000cf0d9169e33ebbd34ac1b494303f2c99"
+    },
+    "__DATA,PyRuntime": {
+      "size": 458744,
+      "sha256": "cad46e955860cac2bbe2ee053f0354b96f1174b26c1f5cb0eee2e5fd27bc1922"
+    }
+  }
+}

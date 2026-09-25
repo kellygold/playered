@@ -1,0 +1,386 @@
+{
+  "crop_cases": [
+    {
+      "id": "full-canvas",
+      "normalized_box": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "id": "single-pixel",
+      "pixel_box": [
+        511,
+        511,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "one-pixel-edge-strip",
+      "pixel_box": [
+        0,
+        0,
+        1,
+        512
+      ]
+    },
+    {
+      "id": "far-corner",
+      "pixel_box": [
+        448,
+        448,
+        512,
+        512
+      ]
+    },
+    {
+      "id": "transparent-only",
+      "pixel_box": [
+        210,
+        210,
+        302,
+        302
+      ]
+    },
+    {
+      "id": "negative-origin-clamp",
+      "pixel_box": [
+        -64,
+        -32,
+        128,
+        160
+      ]
+    },
+    {
+      "id": "outside-extent-clamp",
+      "pixel_box": [
+        420,
+        420,
+        640,
+        620
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "annotations": [
+        {
+          "id": "dots",
+          "parameters_mm": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.6,
+            0.8,
+            1.2
+          ],
+          "protects": "Islands transition across sub-nozzle and printable diameters."
+        },
+        {
+          "id": "rings",
+          "parameters_mm": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.6,
+            0.8,
+            1.2
+          ],
+          "protects": "Thin walls and enclosed centers do not become false perimeter artifacts."
+        },
+        {
+          "id": "holes",
+          "parameters_mm": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.6,
+            0.8,
+            1.2
+          ],
+          "protects": "Enclosed voids are measured independently from foreground islands."
+        },
+        {
+          "id": "necks",
+          "parameters_mm": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.6,
+            0.8,
+            1.2
+          ],
+          "protects": "Narrow connections are reported or repaired without deleting both lobes."
+        },
+        {
+          "id": "long-lines",
+          "parameters_mm": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.6
+          ],
+          "protects": "Area cleanup preserves long printable strokes and flags sub-nozzle widths."
+        },
+        {
+          "id": "anti-alias-edges",
+          "parameters_mm": [
+            0.25
+          ],
+          "protects": "Sloped supersampled boundaries quantize deterministically."
+        },
+        {
+          "id": "canvas-boundaries",
+          "parameters_mm": [
+            1.5
+          ],
+          "protects": "Clipped components touching each boundary remain valid regions."
+        }
+      ],
+      "canvas": {
+        "height_mm": 38.4,
+        "nozzle_diameter_mm": 0.2,
+        "pixels_per_mm": 20.0,
+        "width_mm": 51.2
+      },
+      "color_mode": "RGBA",
+      "encoded_format": "png",
+      "file": "geometry-nozzle-020.png",
+      "has_transparency": false,
+      "height_px": 768,
+      "id": "geometry-nozzle-020",
+      "pixel_sha256": "c99e76cb05afaaf4e7921f38e05737ebf1958fc62b6350fb6a4940671804b258",
+      "png_sha256": "097567142725a0cbcb7b22f10cf1c51ea94a0adebe14b07b9515ebefd97643f7",
+      "width_px": 1024
+    },
+    {
+      "annotations": [
+        {
+          "id": "dots",
+          "parameters_mm": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.6,
+            0.8,
+            1.2
+          ],
+          "protects": "Islands transition across sub-nozzle and printable diameters."
+        },
+        {
+          "id": "rings",
+          "parameters_mm": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.6,
+            0.8,
+            1.2
+          ],
+          "protects": "Thin walls and enclosed centers do not become false perimeter artifacts."
+        },
+        {
+          "id": "holes",
+          "parameters_mm": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.6,
+            0.8,
+            1.2
+          ],
+          "protects": "Enclosed voids are measured independently from foreground islands."
+        },
+        {
+          "id": "necks",
+          "parameters_mm": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.6,
+            0.8,
+            1.2
+          ],
+          "protects": "Narrow connections are reported or repaired without deleting both lobes."
+        },
+        {
+          "id": "long-lines",
+          "parameters_mm": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.6
+          ],
+          "protects": "Area cleanup preserves long printable strokes and flags sub-nozzle widths."
+        },
+        {
+          "id": "anti-alias-edges",
+          "parameters_mm": [
+            0.25
+          ],
+          "protects": "Sloped supersampled boundaries quantize deterministically."
+        },
+        {
+          "id": "canvas-boundaries",
+          "parameters_mm": [
+            1.5
+          ],
+          "protects": "Clipped components touching each boundary remain valid regions."
+        }
+      ],
+      "canvas": {
+        "height_mm": 76.8,
+        "nozzle_diameter_mm": 0.4,
+        "pixels_per_mm": 10.0,
+        "width_mm": 102.4
+      },
+      "color_mode": "RGBA",
+      "encoded_format": "png",
+      "file": "geometry-nozzle-040.png",
+      "has_transparency": false,
+      "height_px": 768,
+      "id": "geometry-nozzle-040",
+      "pixel_sha256": "cc8e83ef164076f49c031f5f199b39e1dc8c9c78f30922ffb9f3eb343c944b68",
+      "png_sha256": "532745a406a495cf84a8a7bcff20e7f2b6ad8a6c1a0d43725fb1061d885877d9",
+      "width_px": 1024
+    },
+    {
+      "annotations": [
+        {
+          "id": "transparent-input",
+          "parameters_mm": [],
+          "protects": "Transparent pixels remain distinct from opaque background colors."
+        },
+        {
+          "id": "partial-alpha",
+          "parameters_mm": [],
+          "protects": "Partial alpha compositing is deterministic and does not invent labels."
+        },
+        {
+          "id": "crop-extremes",
+          "parameters_mm": [],
+          "protects": "Shapes crossing every edge exercise clamped and minimal crop behavior."
+        },
+        {
+          "id": "anti-alias-edges",
+          "parameters_mm": [],
+          "protects": "Diagonal and curved alpha edges retain deterministic coverage."
+        }
+      ],
+      "canvas": {
+        "height_mm": 64.0,
+        "nozzle_diameter_mm": null,
+        "pixels_per_mm": 8.0,
+        "width_mm": 64.0
+      },
+      "color_mode": "RGBA",
+      "encoded_format": "png",
+      "file": "boundary-transparency.png",
+      "has_transparency": true,
+      "height_px": 512,
+      "id": "boundary-transparency",
+      "pixel_sha256": "0910b35dbeaa92582e81ffbf1eb3d1267ca939825ed0f7548526445c83a9f7c0",
+      "png_sha256": "04ee28850ef6ebc98bdaae2f0fc495f70d00d45959e39d3077daf471594eb44f",
+      "width_px": 512
+    },
+    {
+      "annotations": [
+        {
+          "id": "near-color-ties",
+          "parameters_mm": [],
+          "protects": "Near-identical dark, light, and orange inputs expose unstable tie-breaking."
+        },
+        {
+          "id": "dense-gradient",
+          "parameters_mm": [],
+          "protects": "Every grayscale boundary exercises deterministic nearest-color assignment."
+        }
+      ],
+      "canvas": {
+        "height_mm": 32.0,
+        "nozzle_diameter_mm": null,
+        "pixels_per_mm": 8.0,
+        "width_mm": 64.0
+      },
+      "color_mode": "RGBA",
+      "encoded_format": "png",
+      "file": "palette-degeneracy.png",
+      "has_transparency": false,
+      "height_px": 256,
+      "id": "palette-degeneracy",
+      "pixel_sha256": "096bf5308f202ed617de84d144b4bfd115a91e58959245d830fa5b317b651259",
+      "png_sha256": "ec1e68456b5e85a347831c8bdb2a7487e3c9f9b1194906a1f38e9c277424b223",
+      "width_px": 512
+    }
+  ],
+  "generator_version": 1,
+  "palette": [
+    "#F2D6AA",
+    "#E75B12",
+    "#0A3A78",
+    "#202428"
+  ],
+  "palette_cases": [
+    {
+      "colors": [
+        "#F2D6AA"
+      ],
+      "id": "single-color",
+      "protects": "A valid one-label field remains exhaustive."
+    },
+    {
+      "colors": [
+        "#202428",
+        "#202428",
+        "#F2D6AA"
+      ],
+      "id": "exact-duplicate",
+      "protects": "Duplicate swatches are rejected or merged deterministically."
+    },
+    {
+      "colors": [
+        "#000000",
+        "#010101",
+        "#020202",
+        "#F2D6AA"
+      ],
+      "id": "near-black-tie",
+      "protects": "Perceptual ties use stable palette order."
+    },
+    {
+      "colors": [
+        "#FDFDFD",
+        "#FEFEFE",
+        "#FFFFFF",
+        "#E75B12"
+      ],
+      "id": "near-white-tie",
+      "protects": "Near-identical light filaments do not create nondeterministic labels."
+    },
+    {
+      "colors": [
+        "#202428",
+        "#0A3A78",
+        "#E75B12",
+        "#F2D6AA",
+        "#25A45A"
+      ],
+      "id": "over-color-limit",
+      "protects": "A palette above the four-color project limit fails explicitly."
+    }
+  ],
+  "schema_version": 1
+}

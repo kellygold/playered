@@ -1,0 +1,46 @@
+{
+  "case_id": "workflow-specimen",
+  "height_px": 12,
+  "labels": [
+    {
+      "hex": "#F2D6AA",
+      "name": "Cream",
+      "value": 0
+    },
+    {
+      "hex": "#E75B12",
+      "name": "Orange",
+      "value": 1
+    },
+    {
+      "hex": "#0A3A78",
+      "name": "Blue",
+      "value": 2
+    },
+    {
+      "hex": "#202428",
+      "name": "Charcoal",
+      "value": 3
+    }
+  ],
+  "labels_file": "labels.png",
+  "mask_files": {
+    "0": "mask-000.png",
+    "1": "mask-001.png",
+    "2": "mask-002.png",
+    "3": "mask-003.png"
+  },
+  "schema_version": 1,
+  "stats_file": "stats.json",
+  "tolerance": {
+    "max_changed_pixels": 1,
+    "max_changed_ratio": 0.005208333333333333,
+    "stats": {
+      "edge.length_mm": {
+        "absolute": 0.2,
+        "relative": 0.01
+      }
+    }
+  },
+  "width_px": 16
+}

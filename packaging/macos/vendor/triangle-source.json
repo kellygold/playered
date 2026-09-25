@@ -1,0 +1,7 @@
+{
+  "wrapper_commit": "595b43eb6682992a0b1012b9671bf860c0e6ae56",
+  "c_commit": "8b9e1046e5cddab1298d3204f10c93665836cf99",
+  "source_sha256": "131f81bbe9732b525e5db12977f605afbb3c2d0d1498e8d45efe9dd2f26e5399",
+  "upstream": "https://github.com/drufat/triangle/tree/v20250106",
+  "modifications": "None; built from upstream wrapper and its pinned C submodule."
+}

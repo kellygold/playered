@@ -1,0 +1,4 @@
+.job-activity { display: grid; gap: 7px; min-width: 0; }
+.job-activity__meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; font-size: 11px; font-variant-numeric: tabular-nums; color: var(--i23-editor-muted); }
+.job-activity progress { width: 100%; height: 6px; }
+.job-activity p { margin: 0; font-size: 11px; line-height: 1.5; color: var(--i23-editor-muted); }

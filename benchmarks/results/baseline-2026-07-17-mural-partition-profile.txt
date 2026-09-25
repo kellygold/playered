@@ -1,0 +1,68 @@
+         12372702 function calls (12299472 primitive calls) in 3.482 seconds
+
+   Ordered by: cumulative time
+   List reduced from 309 to 60 due to restriction <60>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    3.482    3.482 run_mural_partition.py:135(partition)
+        1    0.002    0.002    3.482    3.482 topology_partition.py:213(partition_master_topology)
+        1    0.000    0.000    3.480    3.480 topology_partition.py:258(_derive_topology_partition)
+        7    0.000    0.000    2.652    0.379 topology_partition.py:356(<genexpr>)
+        6    0.014    0.002    2.651    0.442 topology_partition.py:439(_partition_tile_topology)
+        6    0.860    0.143    2.414    0.402 topology_partition.py:779(_clip_master_topology)
+        1    0.645    0.645    0.679    0.679 topology_partition.py:1050(_master_component_assignment)
+        6    0.195    0.033    0.656    0.109 topology.py:431(_junction_points)
+  1055754    0.443    0.000    0.443    0.000 topology.py:437(<setcomp>)
+       27    0.330    0.012    0.356    0.013 topology.py:452(_component_loops)
+        6    0.276    0.046    0.292    0.049 topology_partition.py:665(_derive_physical_shared_edges)
+        8    0.000    0.000    0.231    0.029 __init__.py:581(__init__)
+        8    0.000    0.000    0.231    0.029 __init__.py:649(update)
+        8    0.111    0.014    0.231    0.029 {built-in method _collections._count_elements}
+        1    0.004    0.004    0.103    0.103 topology_partition.py:1082(_validate_master_components)
+        6    0.005    0.001    0.087    0.015 topology_partition.py:574(_physical_clip_grid)
+  1048582    0.077    0.000    0.077    0.000 topology_partition.py:528(<genexpr>)
+10066/10026    0.067    0.000    0.073    0.000 {built-in method builtins.sorted}
+      163    0.024    0.000    0.067    0.000 {built-in method builtins.sum}
+    42318    0.005    0.000    0.045    0.000 fractions.py:356(forward)
+  1048577    0.044    0.000    0.044    0.000 topology_partition.py:1101(<genexpr>)
+  2151164    0.043    0.000    0.043    0.000 {method 'append' of 'list' objects}
+      551    0.000    0.000    0.043    0.000 model.py:43(_canonical_json_bytes)
+21781/551    0.008    0.000    0.043    0.000 model.py:44(encode)
+  1050651    0.043    0.000    0.043    0.000 topology_partition.py:894(<genexpr>)
+ 4156/587    0.001    0.000    0.039    0.000 {method 'join' of 'str' objects}
+13427/1857    0.002    0.000    0.039    0.000 model.py:61(<genexpr>)
+    74152    0.025    0.000    0.032    0.000 fractions.py:62(__new__)
+      539    0.000    0.000    0.029    0.000 model.py:337(expected_id)
+      539    0.000    0.000    0.027    0.000 model.py:70(deterministic_id)
+    31230    0.010    0.000    0.025    0.000 fractions.py:399(_mul)
+        6    0.003    0.001    0.024    0.004 topology_partition.py:593(<listcomp>)
+        2    0.003    0.001    0.024    0.012 partition.py:365(recompose_visible_tiles)
+        6    0.003    0.000    0.024    0.004 topology_partition.py:587(<listcomp>)
+        6    0.001    0.000    0.022    0.004 topology_partition.py:1017(_cell_area_lookup)
+   375921    0.015    0.000    0.021    0.000 {built-in method builtins.isinstance}
+  1050624    0.021    0.000    0.021    0.000 {method 'pop' of 'list' objects}
+    37001    0.010    0.000    0.020    0.000 fractions.py:584(_richcmp)
+2013/1453    0.000    0.000    0.019    0.000 model.py:64(<genexpr>)
+  1122582    0.019    0.000    0.019    0.000 {built-in method builtins.len}
+51555/21781    0.009    0.000    0.019    0.000 model.py:31(_canonical_value)
+  1048562    0.017    0.000    0.017    0.000 {method 'append' of 'collections.deque' objects}
+  1048576    0.017    0.000    0.017    0.000 {method 'pop' of 'collections.deque' objects}
+       12    0.000    0.000    0.017    0.001 model.py:1254(fingerprint)
+       12    0.000    0.000    0.017    0.001 model.py:1248(canonical_bytes)
+    23151    0.004    0.000    0.016    0.000 {built-in method builtins.min}
+    24713    0.002    0.000    0.016    0.000 fractions.py:606(__lt__)
+  804/719    0.000    0.000    0.015    0.000 main.py:253(__init__)
+  940/855    0.001    0.000    0.014    0.000 {method 'validate_python' of 'pydantic_core._pydantic_core.SchemaValidator' objects}
+     3072    0.002    0.000    0.014    0.000 topology_partition.py:620(<genexpr>)
+        8    0.014    0.002    0.014    0.002 labels.py:44(__post_init__)
+    13890    0.005    0.000    0.012    0.000 __init__.py:183(dumps)
+    21833    0.002    0.000    0.012    0.000 topology.py:486(<lambda>)
+        1    0.000    0.000    0.012    0.012 topology_partition.py:409(recompose_topology_labels)
+        7    0.000    0.000    0.012    0.002 topology_partition.py:761(_validate_canonical_geometry_ids)
+    10260    0.004    0.000    0.012    0.000 fractions.py:391(_sub)
+        6    0.001    0.000    0.011    0.002 model.py:918(graph_is_canonical_and_closed)
+10596/4543    0.002    0.000    0.011    0.000 model.py:37(<dictcomp>)
+      142    0.000    0.000    0.011    0.000 model.py:332(create)
+    21833    0.005    0.000    0.010    0.000 topology.py:502(_turn_preference)
+
+

@@ -1,0 +1,10 @@
+{
+  "type": "machine",
+  "name": "Bambu Lab P2S 0.4 nozzle",
+  "inherits": "fdm_bbl_3dp_001_common",
+  "from": "system",
+  "instantiation": "true",
+  "nozzle_diameter": ["0.4"],
+  "printer_model": "Bambu Lab P2S",
+  "printer_variant": "0.4"
+}

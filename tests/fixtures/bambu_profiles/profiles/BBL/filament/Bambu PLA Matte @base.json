@@ -1,0 +1,8 @@
+{
+  "type": "filament",
+  "name": "Bambu PLA Matte @base",
+  "from": "system",
+  "instantiation": "false",
+  "filament_type": ["PLA"],
+  "filament_flow_ratio": ["0.98"]
+}

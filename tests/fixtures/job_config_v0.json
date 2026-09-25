@@ -1,0 +1,10 @@
+{
+  "schema_version": 0,
+  "source_asset_id": "sha256:example",
+  "width_mm": 200,
+  "height_mm": 133.33,
+  "nozzle_mm": 0.4,
+  "layer_height_mm": 0.2,
+  "palette": ["#181A1B", "#E7D4B2", "#0A4A91", "#E45C17"]
+}
+

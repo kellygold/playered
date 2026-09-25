@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "collection": "public-procedural-regressions",
+  "distribution": "redistributable",
+  "fixtures": [
+    {
+      "id": "geometry-stress",
+      "file": "geometry-stress.png",
+      "sha256": "cb59c79fc7d99434b27c53e678284594c07ebacb631c95cae1074e214007398a",
+      "byte_size": 3688273,
+      "encoded_format": "png",
+      "width_px": 2520,
+      "height_px": 1680,
+      "canvas_width_mm": 600,
+      "canvas_height_mm": 400,
+      "source_path": "scripts/generate_public_fixtures.py",
+      "provenance": "Original procedural shapes and seeded texture; no external artwork.",
+      "rights": "MIT; see repository LICENSE.",
+      "redistributable": true,
+      "regions": [
+        {
+          "id": "enclosed-ring-grid",
+          "x_px": 1230,
+          "y_px": 390,
+          "width_px": 420,
+          "height_px": 470,
+          "protects": "Enclosed one-pixel centers and local ring walls."
+        },
+        {
+          "id": "long-thin-lines",
+          "x_px": 180,
+          "y_px": 300,
+          "width_px": 1320,
+          "height_px": 380,
+          "protects": "Sub-nozzle lines retain measured clearance evidence."
+        }
+      ]
+    },
+    {
+      "id": "signature-detail",
+      "file": "signature-detail.png",
+      "sha256": "253f90d2b3e50819b63b8ab2f1f971966a985b9e9a9f2ca1fc61bddd28b5c353",
+      "byte_size": 503869,
+      "encoded_format": "jpeg",
+      "width_px": 1408,
+      "height_px": 768,
+      "canvas_width_mm": 78,
+      "canvas_height_mm": 42.55,
+      "source_path": "scripts/generate_public_fixtures.py",
+      "provenance": "Original procedural shapes and seeded texture; no external artwork.",
+      "rights": "MIT; see repository LICENSE.",
+      "redistributable": true,
+      "regions": [
+        {
+          "id": "dense-line-detail",
+          "x_px": 0,
+          "y_px": 0,
+          "width_px": 1408,
+          "height_px": 768,
+          "protects": "Fine edges and repeated narrow gaps."
+        },
+        {
+          "id": "extension-signature-mismatch",
+          "x_px": 0,
+          "y_px": 0,
+          "width_px": 1408,
+          "height_px": 768,
+          "protects": "JPEG decoded by bytes despite PNG extension."
+        }
+      ]
+    },
+    {
+      "id": "glyph-strokes",
+      "file": "glyph-strokes.png",
+      "sha256": "6df085f9323eaeefe3bfd077fc3600229e959b9e33cac3356f2bac11ef6cae06",
+      "byte_size": 11274,
+      "encoded_format": "png",
+      "width_px": 1760,
+      "height_px": 800,
+      "canvas_width_mm": 88,
+      "canvas_height_mm": 40,
+      "source_path": "scripts/generate_public_fixtures.py",
+      "provenance": "Original procedural shapes and seeded texture; no external artwork.",
+      "rights": "MIT; see repository LICENSE.",
+      "redistributable": true,
+      "regions": [
+        {
+          "id": "small-stroke-counters",
+          "x_px": 0,
+          "y_px": 0,
+          "width_px": 1760,
+          "height_px": 800,
+          "protects": "Thin strokes and closed counters without font assets."
+        }
+      ]
+    }
+  ]
+}

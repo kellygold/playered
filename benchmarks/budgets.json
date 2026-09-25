@@ -1,0 +1,71 @@
+{
+  "cases": [
+    {
+      "case_id": "startup-cold",
+      "max_median_ms": 435.8,
+      "max_p95_ms": 466.1,
+      "max_peak_python_bytes": 6756492,
+      "max_process_peak_rss_bytes": 208650240
+    },
+    {
+      "case_id": "openapi-cold",
+      "max_median_ms": 2713.9,
+      "max_p95_ms": 2747.6,
+      "max_peak_python_bytes": 26185082,
+      "max_process_peak_rss_bytes": 245415936
+    },
+    {
+      "case_id": "project-reopen-warm",
+      "max_median_ms": 3.1,
+      "max_p95_ms": 3.2,
+      "max_peak_python_bytes": 39362,
+      "max_process_peak_rss_bytes": 245686272
+    },
+    {
+      "case_id": "preview-cold-stress",
+      "max_median_ms": 882.1,
+      "max_p95_ms": 899.4,
+      "max_peak_python_bytes": 51361119,
+      "max_process_peak_rss_bytes": 371097600
+    },
+    {
+      "case_id": "preview-warm-stress",
+      "max_median_ms": 819.0,
+      "max_p95_ms": 827.8,
+      "max_peak_python_bytes": 51329184,
+      "max_process_peak_rss_bytes": 379846656
+    },
+    {
+      "case_id": "auto-palette-stress",
+      "max_median_ms": 905.7,
+      "max_p95_ms": 929.5,
+      "max_peak_python_bytes": 51334479,
+      "max_process_peak_rss_bytes": 392454144
+    },
+    {
+      "case_id": "vectorization-potrace",
+      "max_median_ms": 58.7,
+      "max_p95_ms": 59.4,
+      "max_peak_python_bytes": 119387,
+      "max_process_peak_rss_bytes": 392503296
+    },
+    {
+      "case_id": "geometry-openscad",
+      "max_median_ms": 309.6,
+      "max_p95_ms": 346.2,
+      "max_peak_python_bytes": 119550,
+      "max_process_peak_rss_bytes": 392527872
+    },
+    {
+      "case_id": "packaging-production-3mf",
+      "max_median_ms": 871.7,
+      "max_p95_ms": 903.4,
+      "max_peak_python_bytes": 18651431,
+      "max_process_peak_rss_bytes": 401006592
+    }
+  ],
+  "derivation": "Generated after the first measured baseline: 2.0x median/p95 duration and 1.5x peak traced Python allocation (minimum 1 KiB) and process RSS.",
+  "schema_version": 1,
+  "source_run_id": "baseline-2026-09-24-public-fixtures",
+  "source_run_sha256": "a859b6edf18ae4ab38d6b303ad4b626b1cd245d0fde19188d6dfbccf2dd8d632"
+}

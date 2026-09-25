@@ -1,0 +1,8 @@
+{
+  "type": "filament",
+  "name": "Bambu PLA Matte @BBL P2S",
+  "inherits": "Bambu PLA Matte @base",
+  "from": "system",
+  "instantiation": "true",
+  "compatible_printers": ["Bambu Lab P2S 0.4 nozzle"]
+}

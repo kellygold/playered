@@ -1,0 +1,186 @@
+.preview-job-status {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid var(--i23-editor-line-soft, #dce2e7);
+  border-radius: 10px;
+  color: var(--i23-editor-text, #182027);
+  background: var(--i23-editor-panel-soft, #f6f8fa);
+}
+
+.preview-job-heading,
+.preview-job-progress .job-activity__meta,
+.preview-job-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.preview-job-eyebrow {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--i23-editor-accent, #147d67);
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.preview-job-heading h3 {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.preview-job-freshness {
+  flex: none;
+  padding: 3px 7px;
+  border: 1px solid var(--i23-editor-line, #c8d1d9);
+  border-radius: 999px;
+  color: var(--i23-editor-muted, #5d6c78);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.preview-job-freshness.is-current {
+  border-color: color-mix(in srgb, var(--i23-editor-accent, #147d67) 35%, transparent);
+  color: var(--i23-editor-accent, #147d67);
+}
+
+.preview-job-freshness.is-stale {
+  border-color: color-mix(in srgb, var(--i23-editor-warning, #8a5709) 40%, transparent);
+  color: var(--i23-editor-warning, #8a5709);
+}
+
+.preview-job-announcement,
+.preview-job-progress p,
+.preview-job-failure p {
+  margin: 0;
+  color: var(--i23-editor-muted, #5d6c78);
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+.preview-job-progress {
+  display: grid;
+  gap: 6px;
+}
+
+.preview-job-progress .job-activity__meta {
+  color: var(--i23-editor-muted, #5d6c78);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.preview-job-progress progress {
+  width: 100%;
+  height: 7px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 999px;
+  accent-color: var(--i23-editor-accent, #147d67);
+}
+
+.preview-job-failure {
+  display: grid;
+  gap: 6px;
+  padding: 9px;
+  border-left: 2px solid var(--i23-editor-danger, #b42318);
+  background: color-mix(in srgb, var(--i23-editor-danger, #b42318) 6%, transparent);
+}
+
+.preview-job-failure strong {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.preview-job-reprocessing {
+  display: grid;
+  gap: 3px;
+  padding: 8px 9px;
+  border-left: 2px solid var(--i23-editor-line-strong, #8c9aa6);
+  background: color-mix(in srgb, var(--i23-editor-line, #c8d1d9) 12%, transparent);
+}
+
+.preview-job-reprocessing[data-mode="scoped"] {
+  border-left-color: var(--i23-editor-accent, #147d67);
+  background: color-mix(in srgb, var(--i23-editor-accent, #147d67) 7%, transparent);
+}
+
+.preview-job-reprocessing strong,
+.preview-job-reprocessing p,
+.preview-job-reprocessing small {
+  margin: 0;
+}
+
+.preview-job-reprocessing strong {
+  font-size: 10px;
+}
+
+.preview-job-reprocessing p,
+.preview-job-reprocessing small {
+  color: var(--i23-editor-muted, #5d6c78);
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+.preview-job-diagnostics summary {
+  width: fit-content;
+  color: var(--i23-editor-muted, #5d6c78);
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.preview-job-diagnostics dl {
+  display: grid;
+  gap: 4px;
+  margin: 7px 0 0;
+}
+
+.preview-job-diagnostics dl > div {
+  display: grid;
+  grid-template-columns: minmax(70px, 0.4fr) minmax(0, 1fr);
+  gap: 6px;
+  font-size: 8px;
+}
+
+.preview-job-diagnostics dt {
+  color: var(--i23-editor-muted, #5d6c78);
+  text-transform: capitalize;
+}
+
+.preview-job-diagnostics dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.preview-job-actions {
+  justify-content: flex-end;
+}
+
+.preview-job-actions button {
+  min-height: 29px;
+  padding: 5px 9px;
+  border: 1px solid var(--i23-editor-line, #c8d1d9);
+  border-radius: 7px;
+  color: inherit;
+  background: var(--i23-editor-panel-raised, #fff);
+  font-size: 9px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.preview-job-actions button[data-primary="true"] {
+  border-color: var(--i23-editor-accent-dark, #16816b);
+  color: var(--i23-editor-accent, #147d67);
+}
+
+.preview-job-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}

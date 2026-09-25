@@ -1,0 +1,8 @@
+{
+  "type": "machine",
+  "name": "fdm_bbl_3dp_001_common",
+  "from": "system",
+  "instantiation": "false",
+  "machine_start_gcode": "G28",
+  "curr_bed_type": "Cool Plate"
+}

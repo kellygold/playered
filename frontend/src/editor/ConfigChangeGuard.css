@@ -1,0 +1,95 @@
+.config-change-guard-backdrop {
+  position: fixed;
+  z-index: 120;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgb(13 24 33 / 68%);
+  backdrop-filter: blur(5px);
+}
+
+.config-change-guard {
+  display: grid;
+  gap: 12px;
+  width: min(100%, 520px);
+  max-height: min(720px, calc(100dvh - 32px));
+  padding: 28px;
+  overflow: auto;
+  border: 1px solid rgb(255 255 255 / 18%);
+  border-radius: 18px;
+  box-shadow: 0 24px 70px rgb(0 0 0 / 38%);
+  background: var(--panel-raised, #161c23);
+  color: var(--text, #eef2f5);
+}
+
+.config-change-guard:focus { outline: none; }
+
+.config-change-guard-icon {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  color: #704000;
+  background: #fff0cf;
+  font-size: 25px;
+  font-weight: 850;
+}
+
+.config-change-guard h2,
+.config-change-guard p { margin: 0; }
+
+.config-change-guard h2 {
+  font-size: clamp(20px, 3vw, 27px);
+  line-height: 1.12;
+  letter-spacing: -.025em;
+}
+
+.config-change-guard > p {
+  color: var(--muted, #97a4b0);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.config-change-guard-impact {
+  display: grid;
+  gap: 4px;
+  padding: 13px 15px;
+  border: 1px solid rgb(245 189 104 / 45%);
+  border-left: 4px solid var(--warning, #f5bd68);
+  border-radius: 10px;
+  background: rgb(245 189 104 / 8%);
+}
+
+.config-change-guard-impact strong { font-size: 14px; }
+
+.config-change-guard-impact span {
+  color: var(--muted, #97a4b0);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.config-change-guard-note { font-size: 12px !important; }
+
+.config-change-guard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 9px;
+  margin-top: 3px;
+}
+
+.config-change-guard-actions .button { min-height: 42px; }
+
+.config-change-guard button:focus-visible {
+  outline: 3px solid var(--accent, #147d67);
+  outline-offset: 3px;
+}
+
+@media (max-width: 540px), (max-height: 560px) {
+  .config-change-guard-backdrop { padding: 10px; }
+  .config-change-guard { gap: 9px; padding: 18px; border-radius: 13px; }
+  .config-change-guard-actions { display: grid; grid-template-columns: 1fr; }
+  .config-change-guard-actions .button { width: 100%; white-space: normal; }
+}
